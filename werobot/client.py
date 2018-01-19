@@ -48,6 +48,9 @@ class Client(object):
             body = _json.dumps(kwargs["data"], ensure_ascii=False)
             body = body.encode('utf8')
             kwargs["data"] = body
+        
+        if "VERIFY" in self.config:
+            kwargs.update({"VERIFY": self.config.get("VERIFY")})
 
         r = requests.request(
             method=method,
