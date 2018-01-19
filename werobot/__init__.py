@@ -1,5 +1,5 @@
-__version__ = '1.2.0'
-__author__ = 'whtsky'
+__version__ = '1.2.1'
+__author__ = 'whtsky & yueyatianchong'
 __license__ = 'MIT'
 
 __all__ = ["WeRoBot"]

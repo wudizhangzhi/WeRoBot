@@ -50,7 +50,7 @@ class Client(object):
             kwargs["data"] = body
         
         if "VERIFY" in self.config:
-            kwargs.update({"VERIFY": self.config.get("VERIFY")})
+            kwargs.update({"verify": self.config.get("VERIFY")})
 
         r = requests.request(
             method=method,
